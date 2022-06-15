@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding-top: 2vh;
+  font-size: 5vh;
+  font-weight: 400;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding-top: 2vh;
+  font-size: 3vh;
+  font-weight: 800;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  background-color: skyblue;
+  min-width: 90vh;
+  min-height: 97vh;
+  padding-bottom: 3vh;
+}
+
+.wrapper {
+  width: 100vh;
+  background-color: white;
+}
+
+.board {
+  --grid-size: 16;
+  display: grid;
+  height: 40rem;
+  grid-template: repeat(var(--grid-size), 1fr) / repeat(var(--grid-size), 1fr);
+}
+
+.square {
+  border: 1px solid black;
+  display: grid;
+  place-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  background-color: skyblue;
+}
+
+#button {
+  background-color: rgb(181, 38, 221);
+  color: white;
+  margin-left: 5px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  min-height: 5vh;
+  min-width: 15vh;
+  border-radius: 5px;
+  font-size: 2.2vh;
+  font-weight: 500;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  cursor: pointer;
+}
+
+.footer{
+  margin-top: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;}
